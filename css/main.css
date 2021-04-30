@@ -104,6 +104,29 @@ h3 {
   #menu ul li {
     margin-left: 24px;
   }
+  #menu ul li a {
+    color: #cccccc;
+    -webkit-transition: ease 250ms;
+    transition: ease 250ms;
+  }
+  #menu ul li a:hover {
+    color: #fff;
+  }
+  #menu ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #fff;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  }
+  #menu ul li a:hover:after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 @media (max-width: 1025px) {
@@ -139,6 +162,16 @@ h3 {
   }
   #myVideo {
     display: none;
+  }
+  #menu ul li a {
+    margin-left: 0;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    color: #cccccc;
+  }
+  #menu ul li a:hover {
+    margin-left: 40px;
+    color: #fff;
   }
 }
 

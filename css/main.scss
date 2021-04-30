@@ -100,6 +100,23 @@ h3 {
     #menu ul li {
         margin-left: 24px;
     }
+    #menu ul li a {
+        color: #cccccc;
+        transition: ease 250ms;
+    }
+    #menu ul li a:hover {
+        color: #fff;
+    }
+    #menu ul li a:after {
+        display: block;
+        content: '';
+        border-bottom: solid 3px #fff;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+    #menu ul li a:hover:after {
+        transform: scaleX(1);
+    }
 }
 
 @media (max-width:1025px) {
@@ -125,6 +142,15 @@ h3 {
     }
     #myVideo {
         display: none;
+    }
+    #menu ul li a {
+        margin-left: 0;
+        transition: ease 0.5s;
+        color: #cccccc;
+    }
+    #menu ul li a:hover {
+        margin-left: 40px;
+        color: #fff;
     }
 }
 

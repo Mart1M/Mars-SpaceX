@@ -12,6 +12,7 @@ boutonClose.addEventListener('click', function() {
 
 
 
+
 (function() {
     // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
     window.addEventListener('scroll', function(event) {
