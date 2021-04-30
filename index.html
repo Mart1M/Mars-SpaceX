@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>SpaceX - Mars</title>
+</head>
+
+<body>
+
+    <header class="py-16 px-8 lg:px-40 flex items-center justify-between fixed z-40 w-full">
+        <img src="img/logo.svg" alt="" width="160px">
+        <div class="burger-menu">
+            <nav id="menu">
+                <img id="closemenu" src="img/close.svg" alt="" srcset="">
+                <ul class="text-white items-center uppercase">
+                    <li><a href="">falcon 9</a></li>
+                    <li><a href="">falcon heavy</a></li>
+                    <li><a href="">dragon</a></li>
+                    <li><a href="">starship</a></li>
+                    <li><a href="">human spaceflight</a></li>
+                    <li><a href="">rideshare</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img id="btmenu" src="img/menu.svg" alt="" srcset="">
+    </header>
+
+    <div id='hero'>
+        <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+        <div class='layer-1 layer' data-depth='0.20' data-type='parallax'>
+            <div class="flex flex-col items-center justify-center h-full pb-80">
+                <h1 class="text-white">MARS & BEYOND</h1>
+                <h3 class="uppercase text-white opacity-50">THE ROAD TO MAKING HUMANITY MULTIPLANETARY</h3>
+            </div>
+        </div>
+        <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+        <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+    </div>
+    <div id='hero-mobile'></div>
+    <section class="bg-black">
+        <div class="flex justify-center">
+            <p class="text-white lg:w-3/12 w-full px-8 text-center opacity-50">“You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And
+                I can’t think of anything more exciting than going out there and being among the stars.” <br><br>-Elon Musk</p>
+        </div>
+        <div class="why-mars grid grid-cols-1 lg:grid-cols-2 px-8 lg:px-40 gap-8 lg:gap-80 lg:py-96 py-32 mt-48">
+            <div class="flex flex-col">
+                <h2 class="uppercase text-white">why mars?</h2>
+                <p class="text-white opacity-50">At an average distance of 140 million miles, Mars is one of Earth's closest habitable neighbors. Mars is about half again as far from the Sun as Earth is, so it still has decent sunlight. It is a little cold, but we can warm it up. Its
+                    atmosphere is primarily CO2 with some nitrogen and argon and a few other trace elements, which means that we can grow plants on Mars just by compressing the atmosphere. Gravity on Mars is about 38% of that of Earth, so you would be
+                    able to lift heavy things and bound around. Furthermore, the day is remarkably close to that of Earth.</p>
+            </div>
+            <div class="flex flex-col items-end">
+                <div class="lg:w-96 w-full divide-y divide-white">
+                    <div class="flex lg:justify-end py-4">
+                        <div class="flex justify-between items-end w-full text-white">
+                            <span class="text-sm">Diameter</span>
+                            <div class="flex">
+                                <span>6,791 km </span>
+                                <span class="opacity-50"> / 4,220 mi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end py-4">
+                        <div class="flex justify-between items-end w-full text-white">
+                            <span class="text-sm">Day Length</span>
+                            <div class="flex">
+                                <span>24 hrs 37 min </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end py-4">
+                        <div class="flex justify-between items-end w-full text-white">
+                            <span class="text-sm">Force of Gravity</span>
+                            <div class="flex">
+                                <span>38% of Earth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end py-4">
+                        <div class="flex justify-between items-end w-full text-white">
+                            <span class="text-sm">Avg Distance from Earth</span>
+                            <div class="flex">
+                                <span>225Mkm</span>
+                                <span class="opacity-50">/ 140Mmi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end py-4">
+                        <div class="flex justify-between items-end w-full text-white">
+                            <span class="text-sm">Age</span>
+                            <div class="flex">
+                                <span>4.5 billion years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 lg:px-40 my-16">
+            <div class="text-white flex justify-center flex-col items-center">
+                <h1>6</h1>
+                <h3>MONTHS TO GET TO MARS</h3>
+            </div>
+            <div class="text-white flex justify-center flex-col items-center">
+                <h1>2</h1>
+                <h3>MOONS</h3>
+            </div>
+            <div class="text-white flex justify-center flex-col items-center">
+                <h1>14</h1>
+                <h3>ORBITING SATELLITES</h3>
+            </div>
+        </div>
+
+        <div class="starship pt-32">
+            <video autoplay muted loop id="myVideo">
+                <source src="img/starship.webm" type="video/webm">
+                Your browser does not support HTML5 video.
+            </video>
+            <img src="img/starship.webp" id="starship-mobile" alt="">
+
+            <div class="content lg:px-40 px-8">
+                <span class="opacity-50">VEHICLE</span>
+                <h2>STARSHIP</h2>
+                <p class="w-96 opacity-50 pb-10">Starship will be the world’s most powerful launch vehicle ever developed, with the ability to carry in excess of 100 metric tonnes to Earth orbit. Drawing on an extensive history of launch vehicle and engine development programs, SpaceX
+                    has been rapidly iterating on the design of Starship with orbital-flight targeted for 2020.</p>
+                <a href="" class="cta">LEARN MORE ABOUT STARSHIP</a>
+            </div>
+
+        </div>
+        <div class="lg:px-40 lg:pt-32 pt-96 px-8">
+            <div>
+                <h2 class="text-white">TO MARS AND BACK</h2>
+                <p class="text-white opacity-50 w-96">Together the Starship spacecraft and Super Heavy rocket create a reusable transportation system capable of on orbit refueling and leveraging Mars’ natural H2O and CO2 resources to refuel on the surface of Mars.</p>
+            </div>
+            <div class="flex justify-center lg:-mt-56">
+                <img src="img/travel.svg" alt="" srcset="" width="100%">
+            </div>
+
+            <div class="grid lg:grid-cols-6 grid-cols-2 gap-8">
+                <div class="text-white">
+                    <h2 class="font-bold">01</h2>
+                    <p>LAUNCH & BOOSTER RETURN</p>
+                </div>
+                <div class="text-white">
+                    <h2 class="font-bold">02</h2>
+                    <p>SHIP ARRIVES IN EARTH ORBIT</p>
+                </div>
+                <div class="text-white">
+                    <h2 class="font-bold">03</h2>
+                    <p>TANKERS REFILL SHIP AND RETURN TO EARTH</p>
+                </div>
+                <div class="text-white">
+                    <h2 class="font-bold">04</h2>
+                    <p>REFILLED SHIP TRAVELS TO MARS</p>
+                </div>
+                <div class="text-white">
+                    <h2 class="font-bold">05</h2>
+                    <p>SHIP REFILLED ON MARS USING LOCAL RESOURCES</p>
+                </div>
+                <div class="text-white">
+                    <h2 class="font-bold">06</h2>
+                    <p>SHIP PERFORMS MARS ASCEND & DIRECT RETURN TO EARTH</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <footer class="text-white px-8 py-16 flex flex-col justify-center items-center space-y-16">
+        <div class="w-0.5 h-32 bg-white"></div>
+        <a href="" class="cta">CONTACT US</a>
+        <div class="text-center">
+            <p class="text-sm opacity-50">For inquiries about our human spaceflight program, contact </p><a href="mailto:" class="text-white opacity-100 text-sm">sales@spacex.com</a>
+        </div>
+        <span class="text-sm opacity-25">SPACEX © 2021</span>
+
+    </footer>
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
